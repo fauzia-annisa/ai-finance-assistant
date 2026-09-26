@@ -9,7 +9,7 @@ st.set_page_config(page_title="AI Finance Copilot", layout="centered")
 @st.cache_resource
 def load_models():
     classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
-    qa = pipeline("question-answering")
+    qa = pipeline("question-answering", model="distilbert-base-cased-distilled-squad")
     return classifier, qa
 
 classifier, qa = load_models()
