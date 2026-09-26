@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 st.set_page_config(page_title="AI Finance Copilot", layout="centered")
-st.title("AI Finance Copilot - Demo Mode")
+st.title("📄 AI Finance Copilot - Demo Mode")
 st.write("For CH9 Demo: Upload receipt → Paste extracted text → Ask questions")
 
 uploaded_file = st.file_uploader("Upload receipt image", type=["jpg", "jpeg", "png"])
